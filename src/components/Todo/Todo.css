@@ -1,0 +1,61 @@
+.container {
+  width: calc(100vw-64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: fit-content;
+  border: 2px solid black;
+  transition: all 0.5s ease;
+  padding: 2px 20px;
+  margin: 3px;
+  background-color: #03045e;
+  border-radius: 1.5rem;
+}
+#checkbox {
+  width: 20px;
+  height: 20px;
+  transform: scale(1.1);
+  margin-block: 20px;
+}
+
+.sub-container > button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0.2rem;
+}
+
+input {
+    font-size: 20px;
+  width: 15rem;
+  height: 2rem;
+  margin: 0px 10px;
+  border-radius: 2rem;
+  padding: 4px 20px;
+  outline: none;
+  letter-spacing: 0.1rem;  
+}
+span{
+    margin: 4px 10px;
+    letter-spacing: 0.2rem;
+}
+#deletbtn{
+    background-color: #f00;
+    font-size: 14px;
+  color: #fff;
+  box-shadow: 5px 5px 20px rgb(250, 24, 24);
+}
+#editbtn{
+    background-color: #00c500;
+    box-shadow: 5px 5px 20px #019501;
+    font-size: 14px;
+    color: #fff;
+}

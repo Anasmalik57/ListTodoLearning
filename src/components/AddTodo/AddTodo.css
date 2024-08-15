@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+.addTodo {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addTodo > input {
+  border-radius: 1rem;
+  padding: 7px 16px;
+  width: 25rem;
+}
+input::placeholder {
+  font-size: 18px;
+}
+.addTodo > button {
+  padding: 0.9rem 1.4rem;
+  border-radius: 1rem;
+  /* padding: 20px 30px; */
+  font-size: 16px;
+  color: #fff;
+  background-color: #bc48ff;
+  box-shadow: 5px 5px 20px #bc48ff;
+  border: none;
+  /* outline: 2px solid teal; */
+}
+button{
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
