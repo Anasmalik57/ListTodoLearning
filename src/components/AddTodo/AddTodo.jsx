@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./AddTodo.css";
 
-function AddTodo({addTodo}) {
+function AddTodo({ addTodo }) {
   const [inputText, setInputText] = useState("");
 
   return (
@@ -15,7 +15,7 @@ function AddTodo({addTodo}) {
       />
       <button
         onClick={() => {
-          addTodo(inputText);
+          addTodo({ todoText: inputText });
           setInputText("");
         }}
       >

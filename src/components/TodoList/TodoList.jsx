@@ -3,19 +3,21 @@ import Todo from "../Todo/Todo.jsx";
 
 function TodoList({deleteTodo, editTodo, todoFinished}) {
 
-  const list = useSelector((state)=> state.todo);
+  const list = useSelector((state)=> state.todo.todoList);
+  console.log(list);
+  
 
   // ..........................
   function onFinished(todo, isFinished) {
-    todoFinished(todo, isFinished);
+    todoFinished({todo, isFinished});
   }
   // .............................
   function onDelete(todo) {
-    deleteTodo(todo)
+    deleteTodo({todo})
   }
   // .............................
   function onEdit(todo, todoText) {
-    editTodo(todo, todoText);
+    editTodo({todo, todoText});
   }
 
   // .............................

@@ -30,3 +30,6 @@ button{
   letter-spacing: 0.1rem;
   font-weight: 600;
 }
+.addTodo > button:focus{
+  outline: 1.5px dotted red;
+}
