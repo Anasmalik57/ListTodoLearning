@@ -18,7 +18,7 @@ function Todo({ todoData, isFinished, changeFinished, onDelete, onEdit }) {
         }}
       />
       {isEditing ? (
-        <input type="text" value={editText} onChange={(e) => setEditText(e.target.value)} />
+        <input type="text" value={editText} autoFocus onChange={(e) => setEditText(e.target.value)} />
       ) : (
         <span>{todoData}</span>
       )}
